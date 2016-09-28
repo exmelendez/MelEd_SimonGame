@@ -3,4 +3,17 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="green">#198110</color>
+    <color name="hover_green">#2BBF1F</color>
+
+    <color name="red">#E20505</color>
+    <color name="hover_red">#FF3737</color>
+
+    <color name="yellow">#FEFC16</color>
+    <color name="hover_yellow">#FFFE81</color>
+
+    <color name="blue">#2B77FA</color>
+    <color name="hover_blue">#2BD4FA</color>
+
 </resources>

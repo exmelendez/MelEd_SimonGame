@@ -4,80 +4,106 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context="nyc.c4q.eddie.simongame.MainActivity">
+    android:background="#FFFFFF">
 
     <TextView
-        android:id="@+id/score_text"
+        android:id="@+id/round_text"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
+        android:layout_height="28dp"
         android:layout_alignParentTop="true"
         android:background="#FFFFFF"
         android:gravity="center"
-        android:textSize="26dp"
+        android:text="ROUND"
         android:textColor="#000000"
-        android:textStyle="bold"
-        android:text="SCORE"
-        />
+        android:textSize="26dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/score_board"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:layout_below="@id/score_text"
+        android:layout_height="29dp"
         android:background="#FFFFFF"
         android:gravity="center"
+        android:text="0"
         android:textColor="#000000"
         android:textSize="26dp"
-        android:text="0"
-        />
+        android:layout_below="@+id/round_text"
+        android:layout_alignParentStart="true"/>
 
     <Button
         android:id="@+id/greenBt"
         android:layout_width="180dp"
-        android:layout_height="205dp"
-        android:layout_below="@id/score_board"
+        android:layout_height="180dp"
+        android:layout_above="@id/middle_spacer"
         android:layout_margin="7dp"
-        android:background="@drawable/green_round_corner"
-        android:onClick="buttonClicked"
-        />
+        android:background="@drawable/round_corners"
+        android:backgroundTint="@color/green"
+        android:onClick="buttonClicked" />
 
     <Button
         android:id="@+id/redBt"
         android:layout_width="180dp"
-        android:layout_height="205dp"
+        android:layout_height="180dp"
+        android:layout_above="@id/middle_spacer"
         android:layout_toRightOf="@id/greenBt"
-        android:layout_below="@id/score_board"
         android:layout_margin="7dp"
-        android:background="@drawable/red_round_corner"
-        android:onClick="buttonClicked"/>
+        android:background="@drawable/round_corners"
+        android:backgroundTint="@color/red"
+        android:onClick="buttonClicked" />
+
+    <View
+        android:id="@+id/middle_spacer"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF"></View>
+
+    <Button
+        android:id="@+id/startBt"
+        android:onClick="buttonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_start"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="START" />
 
     <Button
         android:id="@+id/yellowBt"
         android:layout_width="180dp"
-        android:layout_height="205dp"
-        android:layout_below="@id/greenBt"
+        android:layout_height="180dp"
+        android:layout_below="@id/middle_spacer"
         android:layout_margin="7dp"
-        android:background="@drawable/yellow_round_corner"/>
+        android:backgroundTint="@color/yellow"
+        android:background="@drawable/round_corners"
+        android:onClick="buttonClicked" />
+
     <Button
         android:id="@+id/blueBt"
         android:layout_width="180dp"
-        android:layout_height="205dp"
-        android:layout_below="@id/greenBt"
-        android:layout_toRightOf="@id/yellowBt"
+        android:layout_height="180dp"
         android:layout_margin="7dp"
-        android:background="@drawable/blue_round_corner"/>
+        android:layout_below="@id/middle_spacer"
+        android:layout_toRightOf="@id/yellowBt"
+        android:backgroundTint="@color/blue"
+        android:background="@drawable/round_corners"
+        android:onClick="buttonClicked" />
+
 
     <TextView
         android:id="@+id/instruction_timer"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:layout_below="@id/yellowBt"
+        android:layout_height="21dp"
         android:background="#FFFFFF"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:textSize="19dp"
-        android:text="PRESS ANY COLOR TO BEGIN"
-        />
+        android:layout_alignParentBottom="true"
+        android:drawableRight="@drawable/c4q_logo_crop_small"
+        android:gravity="right"
+        android:backgroundTint="#C70039"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        android:text="Made with love @ "/>
+
 
 </RelativeLayout>

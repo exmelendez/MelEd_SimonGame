@@ -19,12 +19,10 @@ public class MainActivity extends AppCompatActivity {
         blueBt.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
-                blueBt.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                blueBt.setBackgroundColor(getResources().getColor(R.color.colorPrimary);
                 return false;
             }
         });
-
-
 
         blueBt.setOnClickListener(new View.OnClickListener() {
             @Override
