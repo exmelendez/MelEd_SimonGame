@@ -6,105 +6,93 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-    <TextView
-        android:id="@+id/round_text"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="28dp"
-        android:layout_alignParentTop="true"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:text="ROUND"
-        android:textColor="#000000"
-        android:textSize="26dp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/score_board"
-        android:layout_width="match_parent"
-        android:layout_height="29dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/round_text"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:text="0"
-        android:textColor="#000000"
-        android:textSize="26dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-    <View
-        android:id="@+id/middle_spacer"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_centerInParent="true"
-        android:background="#FFFFFF" />
-
-    <Button
-        android:id="@+id/greenBt"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_above="@id/middle_spacer"
-        android:layout_margin="7dp"
-        android:background="@drawable/round_corners"
-        android:backgroundTint="@color/green"
-        android:onClick="buttonClicked" />
-
-    <Button
-        android:id="@+id/redBt"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_above="@id/middle_spacer"
-        android:layout_margin="7dp"
-        android:layout_toRightOf="@id/greenBt"
-        android:background="@drawable/round_corners"
-        android:backgroundTint="@color/red"
-        android:onClick="buttonClicked" />
+            <Button
+                android:id="@+id/greenBt"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/r_corners2"
+                android:backgroundTint="@color/green"
+                android:onClick="buttonClicked" />
 
 
-    <Button
-        android:id="@+id/startBt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="@drawable/round_start"
-        android:onClick="buttonClicked"
-        android:text="START"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+            <Button
+                android:id="@+id/redBt"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/r_corners2"
+                android:backgroundTint="@color/red"
+                android:onClick="buttonClicked" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/yellowBt"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_below="@id/middle_spacer"
-        android:layout_margin="7dp"
-        android:background="@drawable/round_corners"
-        android:backgroundTint="@color/yellow"
-        android:onClick="buttonClicked" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/blueBt"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_below="@id/middle_spacer"
-        android:layout_margin="7dp"
-        android:layout_toRightOf="@id/yellowBt"
-        android:background="@drawable/round_corners"
-        android:backgroundTint="@color/blue"
-        android:onClick="buttonClicked" />
+            <Button
+                android:id="@+id/yellowBt"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/r_corners2"
+                android:backgroundTint="@color/yellow"
+                android:onClick="buttonClicked" />
 
+            <Button
+                android:id="@+id/blueBt"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/r_corners2"
+                android:backgroundTint="@color/blue"
+                android:onClick="buttonClicked" />
+
+
+        </LinearLayout>
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/instruction_timer"
+        android:id="@+id/mad_props"
         android:layout_width="match_parent"
         android:layout_height="21dp"
         android:layout_alignParentBottom="true"
         android:background="#FFFFFF"
         android:backgroundTint="#C70039"
-        android:drawableRight="@drawable/c4q_logo_crop_small"
+        android:drawableRight="@drawable/c4q_logo_crop_super_small"
         android:gravity="right"
         android:text="Made with love @ "
         android:textColor="#FFFFFF"
         android:textSize="17dp"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/startBt"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/r_start2"
+        android:onClick="buttonClicked"
+        android:text="START"
+        android:textColor="#f3f7a3ff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

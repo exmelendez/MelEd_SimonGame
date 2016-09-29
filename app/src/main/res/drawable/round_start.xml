@@ -2,11 +2,11 @@
     android:shape="oval"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <stroke android:color="#C70039"
+    <stroke android:color="#ff6bfa"
         android:width="6dp">
     </stroke>
 
-    <solid android:color="#FF5733">
+    <solid android:color="#f1ff92ed">
     </solid>
 
     <size android:width="70dp"

@@ -5,15 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test);
-        TextView scoreBoard = (TextView)findViewById(R.id.score_board);
+        setContentView(R.layout.activity_main);
         final Button blueBt = (Button) findViewById(R.id.blueBt);
 
         blueBt.setOnTouchListener(new View.OnTouchListener() {
