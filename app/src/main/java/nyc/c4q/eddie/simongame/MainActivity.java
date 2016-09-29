@@ -12,14 +12,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.test);
         TextView scoreBoard = (TextView)findViewById(R.id.score_board);
         final Button blueBt = (Button) findViewById(R.id.blueBt);
 
         blueBt.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
-                blueBt.setBackgroundColor(getResources().getColor(R.color.colorPrimary);
+                blueBt.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 return false;
             }
         });
