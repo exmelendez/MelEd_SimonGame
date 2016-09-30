@@ -6,69 +6,6 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/greenBt"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:background="@drawable/r_corners2"
-                android:backgroundTint="@color/green"
-                android:onClick="buttonClicked" />
-
-
-            <Button
-                android:id="@+id/redBt"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:background="@drawable/r_corners2"
-                android:backgroundTint="@color/red"
-                android:onClick="buttonClicked" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/yellowBt"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:background="@drawable/r_corners2"
-                android:backgroundTint="@color/yellow"
-                android:onClick="buttonClicked" />
-
-            <Button
-                android:id="@+id/blueBt"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:background="@drawable/r_corners2"
-                android:backgroundTint="@color/blue"
-                android:onClick="buttonClicked" />
-
-
-        </LinearLayout>
-    </LinearLayout>
-
     <TextView
         android:id="@+id/mad_props"
         android:layout_width="match_parent"
@@ -94,5 +31,66 @@
         android:textColor="#f3f7a3ff"
         android:textSize="30dp"
         android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/greenBt"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/green"
+                />
+
+
+            <Button
+                android:id="@+id/redBt"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/red"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yellowBt"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/yellow"
+                />
+
+            <Button
+                android:id="@+id/blueBt"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/blue"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

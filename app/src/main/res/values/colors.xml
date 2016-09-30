@@ -8,10 +8,10 @@
     <color name="hover_green">#2BBF1F</color>
 
     <color name="red">#E20505</color>
-    <color name="hover_red">#FF3737</color>
+    <color name="hover_red">#f95d5d</color>
 
-    <color name="yellow">#FEFC16</color>
-    <color name="hover_yellow">#FFFE81</color>
+    <color name="yellow">#faf802</color>
+    <color name="hover_yellow">#faf9ca</color>
 
     <color name="blue">#2B77FA</color>
     <color name="hover_blue">#2BD4FA</color>
