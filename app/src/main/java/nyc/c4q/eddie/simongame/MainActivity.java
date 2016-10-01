@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button startBtn;
     private Handler time;
     private int gameRound = 0;
-    private List<Integer> startingNumArray;
+    private List<Integer> startingNumArray = new ArrayList<Integer>();
     private int index = 0;
 
     @Override
@@ -39,11 +40,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         greenBtn.setOnClickListener(this);
         yellowBtn.setOnClickListener(this);
 
+        redBtn.setEnabled(false);
+        blueBtn.setEnabled(false);
+        greenBtn.setEnabled(false);
+        yellowBtn.setEnabled(false);
+
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 beginGame(true);
+                startBtn.setClickable(false);
                 startBtn.setText(String.valueOf(gameRound));
+
 
             }
         });
@@ -91,18 +99,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
 
-        startingNumArray = new ArrayList<>(); // clicked  Start button and create an empty array
-        // Generate random number depending on your level and add them in to startingarray
+        //startingNumArray = new ArrayList<>(); // clicked  Start button and create an empty array
+        // Generate random number depending on your level and add them in to starting array
 
 
         //Generate random numbers according to the level
 
-        for (int i = 0; i < gameRound; i++) { // it will make + 1
+        //for (int i = 0; i < gameRound; i++) { // it will make + 1
             Random nums = new Random();
             int colorNum = nums.nextInt(4);
             // add a random number
-            startingNumArray.add(colorNum); // run gameRound times and ad the numbers into an array
-        }
+            startingNumArray.add(colorNum); // run gameRound times and add the numbers into an array
+        //}
 
 
 
@@ -110,6 +118,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         matchingColors(startingNumArray); // match numbers to colors
 
     }
+
+
 
     public void validateUserInput(int colorNumber) {
         if (startingNumArray.get(index) == colorNumber) {
@@ -129,16 +139,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         } else {
             /**
-             * if you loose then we have to reset the game level and disable all buttons until
+             * if you lose then we have to reset the game level and disable all buttons until
              * you press start
              * Start button cannot be disabled because you wouldn't be able to restart the game
              */
 
+            Toast.makeText(MainActivity.this, "You Lost!", Toast.LENGTH_SHORT)
+                    .show();
+            startingNumArray.clear();
             startBtn.setText("START");
             redBtn.setEnabled(false);
             greenBtn.setEnabled(false);
             blueBtn.setEnabled(false);
             yellowBtn.setEnabled(false);
+            startBtn.setClickable(true);
 
         }
 

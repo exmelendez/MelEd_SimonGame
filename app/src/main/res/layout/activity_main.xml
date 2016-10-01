@@ -6,27 +6,12 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-    <TextView
-        android:id="@+id/mad_props"
-        android:layout_width="match_parent"
-        android:layout_height="21dp"
-        android:layout_alignParentBottom="true"
-        android:background="#FFFFFF"
-        android:backgroundTint="#C70039"
-        android:drawableRight="@drawable/c4q_logo_crop_super_small"
-        android:gravity="right"
-        android:text="Made with love @ "
-        android:textColor="#FFFFFF"
-        android:textSize="17dp"
-        android:textStyle="bold" />
-
     <Button
         android:id="@+id/startBt"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerInParent="true"
         android:background="@drawable/r_start2"
-        android:onClick="buttonClicked"
         android:text="START"
         android:textColor="#f3f7a3ff"
         android:textSize="30dp"
